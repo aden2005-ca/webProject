@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">CS</span>
+      <span class="brandText">Cheat Sheet Site</span>
+    </div>
+
+    <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <a class="navLink" href="index.html">Home</a>
+      <a class="navLink" href="html-cheatsheet.html">HTML Cheat Sheet</a>
+      <a class="navLink active" href="css-cheatsheet.html">CSS Cheat Sheet</a>
+      <a class="navLink" href="js-cheatsheet.html">JS Cheat Sheet</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1 class="pageTitle">CSS Cheat Sheet</h1>
+
+    <section class="card">
+      <h2>Selectors</h2>
+      <pre class="code">
+        <code>
+          h1 { color: red; }
+          .box { padding: 10px; }
+          #main { width: 100%; }
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Box Model</h2>
+      <ul class="list">
+        <li><b>margin</b> outside space</li>
+        <li><b>border</b> line around</li>
+        <li><b>padding</b> inside space</li>
+        <li><b>content</b> the actual element content</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Flexbox</h2>
+      <pre class="code">
+        <code>
+          .row {
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          align-items: center;
+          }
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Grid</h2>
+      <pre class="code">
+        <code>
+          .grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+          }
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Responsive</h2>
+      <pre class="code">
+        <code>
+          @media (max-width: 700px) {
+          .nav { display: none; }
+        }
+      </code>
+    </pre>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>CSS Cheat Sheet</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

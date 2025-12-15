@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">CS</span>
+      <span class="brandText">Cheat Sheet Site</span>
+    </div>
+
+    <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <a class="navLink" href="index.html">Home</a>
+      <a class="navLink active" href="html-cheatsheet.html">HTML Cheat Sheet</a>
+      <a class="navLink" href="css-cheatsheet.html">CSS Cheat Sheet</a>
+      <a class="navLink" href="js-cheatsheet.html">JS Cheat Sheet</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1 class="pageTitle">HTML Cheat Sheet</h1>
+
+    <section class="card">
+      <h2>Basic Structure</h2>
+      <pre class="code">
+        <!--&lt and &gt are utf code for < and > we will use it in most part of this code since we're talking about html tags-->
+        <code>
+          &lt;!doctype html&gt;
+          &lt;html&gt;
+          &lt;head&gt;...&lt;/head&gt;
+          &lt;body&gt;...&lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Common Tags</h2>
+      <ul class="list">
+        <li><b>&lt;h1&gt; - &lt;h6&gt;</b> headings</li>
+        <li><b>&lt;p&gt;</b> paragraph</li>
+        <li><b>&lt;a href=""&gt;</b> link</li>
+        <li><b>&lt;img src="" alt=""&gt;</b> image</li>
+        <li><b>&lt;div&gt;</b> generic container</li>
+        <li><b>&lt;section&gt;</b> section of a page</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Lists</h2>
+      <pre class="code">
+        <code>
+          &lt;ul&gt;
+          &lt;li&gt;Item&lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;ol&gt;
+          &lt;li&gt;First&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Forms</h2>
+      <pre class="code">
+        <code>
+          &lt;form&gt;
+          &lt;label&gt;Name&lt;/label&gt;
+          &lt;input type="text" /&gt;
+
+          &lt;label&gt;Message&lt;/label&gt;
+          &lt;textarea&gt;&lt;/textarea&gt;
+
+          &lt;button&gt;Send&lt;/button&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Tables</h2>
+      <pre class="code">
+        <code>
+          &lt;table&gt;
+          &lt;tr&gt;
+          &lt;th&gt;Title&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+          &lt;td&gt;Row 1&lt;/td&gt;
+          &lt;td&gt;Data&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/table&gt;
+        </code>
+      </pre>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>HTML Cheat Sheet</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

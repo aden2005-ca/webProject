@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">CS</span>
+      <span class="brandText">Cheat Sheet Site</span>
+    </div>
+
+    <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <a class="navLink" href="index.html">Home</a>
+      <a class="navLink" href="html-cheatsheet.html">HTML Cheat Sheet</a>
+      <a class="navLink" href="css-cheatsheet.html">CSS Cheat Sheet</a>
+      <a class="navLink active" href="js-cheatsheet.html">JS Cheat Sheet</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1 class="pageTitle">JavaScript Cheat Sheet</h1>
+
+    <section class="card">
+      <h2>Variables</h2>
+      <pre class="code">
+        <code>
+          let name = "Ali";
+          const age = 20;
+          var oldWay = true;
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Functions</h2>
+      <pre class="code">
+        <code>
+          function add(a, b) {
+            return a + b;
+          }
+
+          const sub = (a, b) =&gt; a - b;</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Arrays</h2>
+      <pre class="code">
+        <code>
+          let nums = [1,2,3];
+          nums.push(4);
+
+          for (let i=0; i&lt;nums.length; i++) {
+            console.log(nums[i]);
+          }
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>DOM</h2>
+      <pre class="code">
+        <code>
+          const btn = document.getElementById("myBtn");
+          btn.addEventListener("click", function(){
+            alert("clicked");
+          });
+        </code>
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Conditions</h2>
+      <pre class="code">
+        <code>
+          if (age &gt;= 18) {
+          console.log("adult");
+          } else {
+          console.log("minor");
+          }
+        </code>
+      </pre>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>JS Cheat Sheet</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
